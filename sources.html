@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style type="text/css">
+        body{
+            padding-top: 70px;
+        }
+        .jumbotron{
+            color: #2c3e50;
+            background: #ecf0f1;
+        }
+        .navbar-inverse{
+            background: #2c3e50;
+        }
+        .navbar-inverse .navbar-nav>li>a{
+            color: white;
+        }
+        .navbar-inverse .navbar-brand {
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+                      <!-- this is the three line button top right -->
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a href="catGallery.html" class="navbar-brand"><span class="glyphicon glyphicon-picture"></span> Images</a>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-nav-demo">
+                <ul class="nav navbar-nav">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="sources.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-8">
+             <div class="thumbnail clearfix">
+                <img src="cat1.jpeg" class="pull-left" height="200" width="300">
+                 <div class="caption" class="pull-right">
+                   <h2>Third example</h2>
+                   <p>Using the .caption class</p>
+                   <button type="button" class="btn btn-primary">View details &raquo;</button>
+                 </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-8">
+             <div class="thumbnail clearfix">
+                <img src="cat2.jpeg" class="pull-left" height="200" width="300">
+                 <div class="caption" class="pull-right">
+                   <h1>Third example  </h1>
+                   <h3>Using the .caption class</h3>
+                 </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-8">
+             <div class="thumbnail clearfix">
+                <img src="cat3.jpeg" class="pull-left" height="200" width="300">
+                 <div class="caption" class="pull-right">
+                   <h1>Third example  </h1>
+                   <h3>Using the .caption class</h3>
+                 </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-8">
+             <div class="thumbnail clearfix">
+                <img src="cat4.jpeg" class="pull-left" height="200" width="300">
+                 <div class="caption" class="pull-right">
+                   <h1>Third example  </h1>
+                   <h3>Using the .caption class</h3>
+                 </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="jumbotron">
+            <h1><span class="fa fa-camera-retro"></span> Cat Image Gallery</h1>
+            <p>A bunch of cat pictures from unsplash</p>
+        </div> -->
+        <!-- <div class="row">
+          <div class="col-xs-12 col-md-8">
+             <div class="thumbnail clearfix">
+                <img src="cat1.jpeg" class="pull-left">
+                 <div class="caption" class="pull-right">
+                   <h1>Third example  </h1>
+                   <h3>Using the .caption class</h3>
+                 </div>
+            </div>
+          </div>
+            <div class="col-xs-12 col-md-4">
+              <h3>Example 2</h3>
+          </div>
+        </div> -->
+
+        <div class="media">
+          <div class="media-left">
+              <div class="thumbnail">
+                    <img src="cat1.jpeg">
+              </div>
+            <!-- <a href="#">
+              <img class="media-object" src="cat1.jpeg">
+            </a> -->
+          </div>
+          <!-- <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div> -->
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-med-6 col-sm-6">
+                <div class="thumbnail">
+                    <img src="cat1.jpeg">
+                </div>
+            </div>
+            
+        </div>
+        <!--<script type="text/javascript">
+                var el = document.getElementById('insertPicturesHere')
+                var gallery = "";
+                //var imageNames = ["cat1.jpeg","cat2.jpeg"]
+                for (var i = 1; i < 8; i++) {
+                    // gallery +="<div class=\"col-lg-4 col-sm-6\">
+                    //                <div class=\"thumbnail\">
+                    //                    <img src=\"cat" + String(i+1) +".jpeg\">
+                    //                 </div>
+                    //             </div>";
+                    gallery +='<div class=\"col-lg-4 col-sm-6\"><div class=\"thumbnail\"><img src=\"cat' + String(i) +'.jpeg\"></div></div>';
+                    //gallery += "<h1 style=\"color:blue;\">hello there</h1>";
+                }
+                el.innerHTML = gallery;
+        </script> -->
+    </div>
+
+</body>
+</html>
